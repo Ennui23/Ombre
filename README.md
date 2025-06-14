@@ -36,6 +36,7 @@ This repository contains the full source code of the Ombre application. The app 
 ```bash
 git clone https://github.com/dev-jed/Ombre.git
 cd Ombre
+```
 
 --- 
 ❓ Frequently Asked Questions
