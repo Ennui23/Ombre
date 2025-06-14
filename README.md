@@ -1,25 +1,35 @@
-# 👕 Ombre — Kotlin + Firebase Android App
+# Ombre — Android-Based Machine Learning Application
 
-**Ombre** is a modern Android application built in Kotlin using Firebase for backend services and machine learning integrations. Designed for a smooth user experience with clean UI and robust functionality.
-
----
-
-## 🚀 Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+**Ombre** is an Android mobile application developed using **Kotlin** and **Firebase**. It was designed as part of a capstone project to demonstrate the integration of client-side Firebase services with local machine learning functionalities. The project follows Android development best practices and is built using Android Studio.
 
 ---
 
-### 🔧 Requirements
+## 📋 Overview
 
-- ✅ [Android Studio](https://developer.android.com/studio) (Arctic Fox or newer recommended)
-- ✅ [Git](https://git-scm.com/)
-- ✅ An Android device or emulator
-- ✅ Internet connection (for syncing Gradle dependencies)
+This repository contains the full source code of the Ombre application. The app features category-based classification, machine learning integration, and a structured navigation system suitable for academic and prototyping use.
 
 ---
 
-## 🛠️ Installation
+## 🔧 System Requirements
+
+- **Android Studio Hedgehog** or later
+- **Kotlin 1.8.0+**
+- **Gradle Plugin Version 8.2.1**
+- **Minimum SDK**: Android API Level 21
+- A valid Firebase project configuration
+
+---
+
+## 📂 Project Structure
+
+- `app/` — Source code and resources
+- `gradle/` — Build configuration files
+- `.gitignore` — Git exclusions for system and IDE files
+- `build.gradle.kts` — Project-level build configuration
+
+---
+
+## 🧑‍💻 How to Set Up and Run the Project
 
 ### 1. Clone the Repository
 
