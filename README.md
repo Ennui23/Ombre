@@ -39,20 +39,21 @@ cd Ombre
 ```
 
 --- 
-❓ Frequently Asked Questions
+## ❓ Frequently Asked Questions
+
 Why is google-services.json not included?
 For security and compliance reasons, the google-services.json file is excluded from the public repository. It contains private configuration credentials specific to your Firebase project. Each developer must generate their own file via the Firebase Console.
 
 The project fails to build or sync. What should I do?
 Ensure that:
 
-Android Studio is updated to Hedgehog or later
+- Android Studio is updated to Hedgehog or later
 
-You have an active internet connection
+- You have an active internet connection
 
-The Google Services plugin is configured correctly
+- The Google Services plugin is configured correctly
 
-All SDK components and plugins are installed via the SDK Manager
+- All SDK components and plugins are installed via the SDK Manager
 
 Can I use my own Firebase project?
 Yes. You may configure your own Firebase project and enable the required services (such as Firestore or Authentication). Ensure that your google-services.json is up to date and correctly placed in the app/ directory.
