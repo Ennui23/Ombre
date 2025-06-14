@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="software_engineering.ModelResults">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/ombre_banner"
+        android:contentDescription="@string/bannerDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/outfit_semibold"
+        android:text="@string/Results"
+        android:textAlignment="center"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textFontWeight="800"
+        android:textSize="28sp"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
+        app:layout_constraintWidth_percent="1" />
+
+    <ImageView
+        android:id="@+id/resultImage"
+        android:layout_width="330dp"
+        android:layout_height="495dp"
+        android:layout_below="@+id/results"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/ImagePH"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintHeight_percent="0.55"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results" />
+
+
+    <FrameLayout
+        android:id="@+id/resViewLayout"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/resultImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintTop_toBottomOf="@+id/resultImage">
+
+        <TextView
+            android:id="@+id/resView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/outfit_semibold"
+            android:textSize="23sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resViewLayout"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resViewLayout"
+        app:layout_constraintWidth_percent="1">
+
+        <ToggleButton
+            android:id="@+id/save"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:background="@drawable/saveresults"
+            android:textColor="@color/black"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_main"
+        tools:layout_editor_absoluteX="-60dp"
+        tools:layout_editor_absoluteY="-229dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

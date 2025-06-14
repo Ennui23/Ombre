@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ombre"
+        android:enableOnBackInvokedCallback="true"
+        android:name="software_engineering.OmbreApp"
+        tools:targetApi="tiramisu">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="software_engineering.project.ombre.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="software_engineering.project.ombre.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+<!--        <activity android:name="software_engineering.PickCategory"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        <activity android:name="software_engineering.PickCategory" android:exported="true"/>
+        <activity android:name="software_engineering.project.ombre.MainActivity" android:exported="true"/>
+        <activity android:name="software_engineering.project.ombre.Event" />
+        <activity android:name="software_engineering.project.ombre.Recommendations" />
+        <activity android:name="software_engineering.ModelResults" />
+        <activity android:name="software_engineering.ChooseEventGender" />
+        <activity android:name="software_engineering.ChooseSubCategory" />
+        <activity android:name="software_engineering.ChooseType" />
+        <activity android:name="software_engineering.ChooseColor" />
+        <activity android:name="software_engineering.ChoosePattern" />
+        <activity android:name="software_engineering.OpenCamera" />
+        <activity android:name="software_engineering.ResultsRecommendation" />
+        <activity android:name="software_engineering.project.ombre.Classify" />
+    </application>
+
+</manifest>

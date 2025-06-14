@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/ombre_banner"
+        android:contentDescription="@string/bannerDesc" />
+
+    <LinearLayout
+        android:id="@+id/choices_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvChooseEvent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="@string/EventTitle"
+                android:textFontWeight="700"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <!-- 1st Row Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/btnTravelAdventure"
+                android:layout_width="120dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/AdvText"
+                android:background="@drawable/adventurebtn"
+                android:visibility="visible"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnBusiness"
+                android:layout_width="105dp"
+                android:layout_height="41dp"
+                android:text="@string/Business"
+                android:visibility="visible"
+                android:background="@drawable/businessbtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvChooseGender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="@string/GenderTitle"
+                android:textFontWeight="700"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:visibility="visible"/>
+
+
+        </LinearLayout>
+
+        <!-- 2nd Row Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/btnMen"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="75dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="26dp"
+                    android:background="@drawable/menbtn"
+                    android:text="@string/Men"
+                    android:textOff=""
+                    android:textOn=""
+                    android:visibility="visible" />
+
+                <ToggleButton
+                    android:id="@+id/btnWomen"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    android:layout_width="100dp"
+                    android:layout_height="41dp"
+                    android:background="@drawable/womenbtn"
+                    android:text="@string/Women"
+                    android:textOff=""
+                    android:textOn=""
+                    android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="320dp"
+            android:layout_gravity="center">
+
+            <ToggleButton
+                android:id="@+id/btnNext"
+                android:layout_width="290dp"
+                android:layout_height="53dp"
+                android:background="@drawable/continuebtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <include layout="@layout/activity_main" />
+
+    </LinearLayout>
+
+</FrameLayout>

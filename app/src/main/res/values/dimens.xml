@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_between_items_linear">5dp</dimen> <!-- Adjust this value as needed -->
+    <dimen name="spacing_between_rows">0dp</dimen> <!-- Adjust the value as needed -->
+    <dimen name="spacing_between_items_grid">0dp</dimen>
+    <dimen name="spacing">20dp</dimen>
+    <dimen name="corner_radius">15dp</dimen>
+
+</resources>

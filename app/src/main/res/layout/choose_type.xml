@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/ombre_banner"
+        android:contentDescription="@string/bannerDesc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvChooseType"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvChooseEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="@string/TypeTitle"
+                android:textFontWeight="700"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/adventure_menActive"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="155dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/btnJacketsActive"
+                    android:layout_width="96dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/jacketsbtn"
+                    android:text="@string/Jackets"
+                    android:textOff=""
+                    android:textOn=""
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <ToggleButton
+                    android:id="@+id/btnJoggersActive"
+                    android:layout_width="102dp"
+                    android:layout_height="41dp"
+                    android:text="@string/Joggers"
+                    android:background="@drawable/joggersbtn"
+                    android:textOff=""
+                    android:textOn=""
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <ToggleButton
+                    android:id="@+id/btnShortsActive"
+                    android:layout_width="90dp"
+                    android:layout_height="41dp"
+                    android:text="@string/Shorts"
+                    android:background="@drawable/shortsbtn"
+                    android:textOff=""
+                    android:textOn=""
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/btnShirtActive"
+                    android:layout_width="95dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/tshirtbtn"
+                    android:text="@string/Tshirt"
+                    android:textOff=""
+                    android:textOn=""
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <ToggleButton
+                    android:id="@+id/btnTanktopActive"
+                    android:layout_width="110dp"
+                    android:layout_height="41dp"
+                    android:text="@string/Tanktops"
+                    android:background="@drawable/tanktopsbtn"
+                    android:textOff=""
+                    android:textOn=""
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adventure_WomenActive"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnJacketsWomenActive"
+                android:layout_width="96dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/jacketsbtn"
+                android:text="@string/Jackets"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnJoggersWomenActive"
+                android:layout_width="102dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Joggers"
+                android:background="@drawable/joggersbtn"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnShortsWomenActive"
+                android:layout_width="90dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Shorts"
+                android:visibility="gone"
+                android:background="@drawable/shortsbtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnShirtWomenActive"
+                android:layout_width="95dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/tshirtbtn"
+                android:text="@string/Tshirt"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnTanktopWomenActive"
+                android:layout_width="110dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Tanktops"
+                android:visibility="gone"
+                android:background="@drawable/tanktopsbtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adventure_menUrban"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnJacketsUrban"
+                android:layout_width="96dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/jacketsbtn"
+                android:text="@string/Jackets"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnJoggersUrban"
+                android:layout_width="102dp"
+                android:layout_height="41dp"
+                android:text="@string/Joggers"
+                android:background="@drawable/joggersbtn"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnShortsUrban"
+                android:layout_width="90dp"
+                android:layout_height="41dp"
+                android:text="@string/Shorts"
+                android:background="@drawable/shortsbtn"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnShirtUrban"
+                android:layout_width="95dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/tshirtbtn"
+                android:text="@string/Tshirt"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnTanktopUrban"
+                android:layout_width="110dp"
+                android:layout_height="41dp"
+                android:text="@string/Tanktops"
+                android:background="@drawable/tanktopsbtn"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adventure_WomenUrban"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnJacketsWomenUrban"
+                android:layout_width="96dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/jacketsbtn"
+                android:text="@string/Jackets"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnJoggersWomenUrban"
+                android:layout_width="102dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Joggers"
+                android:background="@drawable/joggersbtn"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnShortsWomenUrban"
+                android:layout_width="90dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Shorts"
+                android:visibility="gone"
+                android:background="@drawable/shortsbtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnShirtWomenUrban"
+                android:layout_width="95dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/tshirtbtn"
+                android:text="@string/Tshirt"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnTanktopWomenUrban"
+                android:layout_width="110dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Tanktops"
+                android:visibility="gone"
+                android:background="@drawable/tanktopsbtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adventure_menWater"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnBoardShorts"
+                android:layout_width="130dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/boardshortsbtn"
+                android:text="@string/BoardShorts"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnRashguard"
+                android:layout_width="125dp"
+                android:layout_height="41dp"
+                android:text="@string/RashGuard"
+                android:background="@drawable/rashguardbtn"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adventure_WomenWater"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnBikini"
+                android:layout_width="88dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bikinibtn"
+                android:text="@string/Bikini"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnRashguardWomen"
+                android:layout_width="125dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/RashGuard"
+                android:background="@drawable/rashguardbtn"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/business_menCasual"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnChinos"
+                android:layout_width="95dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/chinosbtn"
+                android:text="@string/Chinos"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnPolo"
+                android:layout_width="80dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Trousers"
+                android:visibility="gone"
+                android:background="@drawable/polobtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnTrouserCasualMen"
+                android:layout_width="98dp"
+                android:layout_height="41dp"
+                android:text="@string/Polo"
+                android:visibility="gone"
+                android:background="@drawable/trouserbtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/business_womenCasual"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnBlouse"
+                android:layout_width="98dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Blouse"
+                android:visibility="gone"
+                android:background="@drawable/blousebtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnSkirt"
+                android:layout_width="85dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/skirtbtn"
+                android:text="@string/Skirt"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnTrouserCasualWomen"
+                android:layout_width="98dp"
+                android:layout_height="41dp"
+                android:background="@drawable/trouserbtn"
+                android:text="@string/Trousers"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/business_menFormal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnChinosFormalMen"
+                android:layout_width="95dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/chinosbtn"
+                android:text="@string/Chinos"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnCoats"
+                android:layout_width="85dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Coats"
+                android:visibility="gone"
+                android:background="@drawable/coatsbtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnTrouserFormalMen"
+                android:layout_width="98dp"
+                android:layout_height="41dp"
+                android:text="@string/Trousers"
+                android:visibility="gone"
+                android:background="@drawable/trouserbtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/business_womenFormal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnBlouseFormal"
+                android:layout_width="98dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Blouse"
+                android:visibility="gone"
+                android:background="@drawable/blousebtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnJacketFormalWomen"
+                android:layout_width="96dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/jacketsbtn"
+                android:text="@string/Jacket"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnSkirtFormal"
+                android:layout_width="85dp"
+                android:layout_height="41dp"
+                android:background="@drawable/skirtbtn"
+                android:text="@string/Skirt"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnTrouserFormalWomen"
+                android:layout_width="98dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/trouserbtn"
+                android:text="@string/Trousers"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/business_menTravel"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnLongsleeveTravelMen"
+                android:layout_width="135dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/longsleevebtn"
+                android:text="@string/Longsleeve"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnPants"
+                android:layout_width="90dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Pants"
+                android:visibility="gone"
+                android:background="@drawable/pantsbtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnPoloTravelMen"
+                android:layout_width="80dp"
+                android:layout_height="41dp"
+                android:text="@string/Polo"
+                android:visibility="gone"
+                android:background="@drawable/polobtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnSuitTravelMen"
+                android:layout_width="80dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/suitbtn"
+                android:text="@string/Suit"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/business_womenTravel"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnBlouseTravel"
+                android:layout_width="98dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Blouse"
+                android:visibility="gone"
+                android:background="@drawable/blousebtn"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnDress"
+                android:layout_width="92dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/dressbtn"
+                android:text="@string/Dress"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnPantsTravelWomen"
+                android:layout_width="90dp"
+                android:layout_height="41dp"
+                android:background="@drawable/pantsbtn"
+                android:text="@string/Pants"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnSkirtTravel"
+                android:layout_width="85dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:background="@drawable/skirtbtn"
+                android:text="@string/Skirt"
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="290dp"
+            android:layout_gravity="center">
+
+            <ToggleButton
+                android:id="@+id/btnNext3"
+                android:layout_width="290dp"
+                android:layout_height="53dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/continuebtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                android:visibility="visible"
+                android:text="@string/Next" />
+
+        </LinearLayout>
+
+    <include layout="@layout/activity_main"/>
+
+</FrameLayout>

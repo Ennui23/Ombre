@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/ombre_banner"
+        android:contentDescription="@string/bannerDesc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvChooseSubcategory"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:fontFamily="@font/outfit_medium"
+            android:text="@string/SubcategoryTitle"
+            android:textFontWeight="700"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adventure_subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnactive_adventure"
+                android:layout_width="170dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/activebtn"
+                android:text="@string/Active"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnurban_adventure"
+                android:layout_width="168dp"
+                android:layout_height="41dp"
+                android:text="@string/Urban"
+                android:background="@drawable/urbanbtn"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnwater_adventure"
+                android:layout_width="166dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/waterbtn"
+                android:text="@string/Water"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/business_subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnbusiness_casual"
+                android:layout_width="165dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/businesscasualbtn"
+                android:text="@string/Casual"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnbusiness_formal"
+                android:layout_width="160dp"
+                android:layout_height="41dp"
+                android:text="@string/Formal"
+                android:background="@drawable/businessformalbtn"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnbusiness_travel"
+                android:layout_width="160dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/businesstravelbtn"
+                android:text="@string/Travel"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="290dp"
+        android:layout_gravity="center">
+
+        <ToggleButton
+            android:id="@+id/btnNext2"
+            android:layout_width="290dp"
+            android:layout_height="53dp"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/continuebtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:visibility="visible"
+            android:text="@string/Next" />
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_main"/>
+
+</FrameLayout>

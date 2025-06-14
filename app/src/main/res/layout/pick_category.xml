@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/ombre_banner"
+        android:contentDescription="@string/bannerDesc" />
+
+    <LinearLayout
+        android:id="@+id/choices_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/AdventureEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="@string/AdventureEvent"
+                android:textColor="#571601"
+                android:textFontWeight="800"
+                android:textSize="26sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ToggleButton
+                android:id="@+id/ActiveChoice"
+                android:layout_width="340dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/ctgactive"
+                android:text="@string/Jackets"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/UrbanChoice"
+                android:layout_width="340dp"
+                android:layout_marginStart="26dp"
+                android:layout_height="70dp"
+                android:text="@string/Shorts"
+                android:background="@drawable/ctgurban"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/BusinessEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:fontFamily="@font/outfit_semibold"
+            android:text="@string/BusinessEvent"
+            android:textColor="#571601"
+            android:textFontWeight="800"
+            android:textSize="26sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ToggleButton
+                android:id="@+id/CasualChoice"
+                android:layout_width="340dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/Joggers"
+                android:background="@drawable/ctgcasual"
+                android:layout_marginBottom="25dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginEnd="10dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/FormalChoice"
+                android:layout_width="340dp"
+                android:layout_marginStart="26dp"
+                android:layout_height="70dp"
+                android:text="@string/Shorts"
+                android:background="@drawable/ctgformal"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/tvChooseGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:fontFamily="@font/outfit_semibold"
+            android:text="@string/Gender"
+            android:textColor="#571601"
+            android:textFontWeight="800"
+            android:textSize="26sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <ToggleButton
+                android:id="@+id/btnGirl"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="26dp"
+                android:text="@string/Shorts"
+                android:layout_gravity="center"
+                android:background="@drawable/girl"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnBoy"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/Shorts"
+                android:layout_gravity="center"
+                android:background="@drawable/boy"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/BtnStart"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="40dp"
+                android:text="@string/Shorts"
+                android:layout_gravity="center"
+                android:background="@drawable/btnstart"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+<!--            <ToggleButton-->
+<!--                android:id="@+id/BtnRecommendation"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="38dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginStart="52dp"-->
+<!--                android:text="@string/Shorts"-->
+<!--                android:background="@drawable/btnrecommendation"-->
+<!--                android:textOff=""-->
+<!--                android:textOn=""-->
+<!--                android:visibility="visible"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="parent" />-->
+
+        </LinearLayout>
+
+
+
+        <include layout="@layout/activity_main" />
+
+    </LinearLayout>
+
+</FrameLayout>

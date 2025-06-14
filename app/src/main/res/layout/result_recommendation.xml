@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="software_engineering.ResultsRecommendation">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnavigation">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/btnrecobanner" />
+
+        <ToggleButton
+            android:id="@+id/btnback"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="18dp"
+            android:layout_width="40dp"
+            android:layout_height="27dp"
+            android:background="@drawable/btnback"
+            android:onClick="onBackButtonClick"
+            android:textOff=""
+            android:textOn=""/>
+
+        <TextView
+            android:id="@+id/recoResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:textAlignment="textStart"
+            android:layout_marginStart="26dp"
+            android:textColor="#571601"
+            android:fontFamily="@font/outfit_medium"
+            android:text="@string/ResultsFor"
+            android:textFontWeight="800"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="125dp"
+            android:layout_marginStart="26dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textColor="#A92F27" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="375dp"
+                android:layout_height="585dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginStart="18dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2" />
+
+    </FrameLayout>
+
+    <include layout="@layout/activity_main"/>
+
+</RelativeLayout>
