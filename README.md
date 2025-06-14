@@ -1,4 +1,4 @@
-# 🌈 Ombre — Kotlin + Firebase Android App
+# 👕 Ombre — Kotlin + Firebase Android App
 
 **Ombre** is a modern Android application built in Kotlin using Firebase for backend services and machine learning integrations. Designed for a smooth user experience with clean UI and robust functionality.
 
