@@ -60,3 +60,11 @@ Yes. You may configure your own Firebase project and enable the required service
 
 ### Is this application production-ready?
 No. This application is intended as an academic prototype and is not optimized for production deployment.
+
+Please check your Android Studio Kotlin settings:
+
+1. Go to **Preferences > Kotlin Compiler**
+2. Set **Target JVM Version** to `17`
+3. Sync Gradle and rebuild
+
+This app is built for Kotlin JVM target 17 for compatibility.
