@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/ombre_banner"
+        android:contentDescription="@string/bannerDesc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvChooseColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="@string/ColorTitle"
+                android:textFontWeight="700"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/active_urbanAdventureOutfitColors"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="155dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/btnactive_urbanOutfitBlack"
+                    android:layout_width="87dp"
+                    android:layout_height="41dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/blackbtn"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/Black"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <ToggleButton
+                    android:id="@+id/btnactive_urbanOutfitBrown"
+                    android:layout_width="87dp"
+                    android:layout_height="41dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/brownbtn"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/Brown"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <ToggleButton
+                    android:id="@+id/btnactive_urbanOutfitGray"
+                    android:layout_width="87dp"
+                    android:layout_height="41dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/graybtn"
+                    android:text="@string/Gray"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/btnactive_urbanOutfitGreen"
+                    android:layout_width="87dp"
+                    android:layout_height="41dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/greenbtn"
+                    android:layout_marginStart="26dp"
+                    android:text="@string/Green"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/waterAdventureOutfitColors"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnwaterAdventureOutfitBlack"
+                android:layout_width="87dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/blackbtn"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/Black"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnwaterAdventureOutfitBlue"
+                android:layout_width="87dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/bluebtn"
+                android:layout_marginEnd="15dp"
+                android:text="@string/Blue"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btnwaterAdventureOutfitGreen"
+                android:layout_width="87dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/greenbtn"
+                android:text="@string/Green"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btnwaterAdventureOutfitOrange"
+                android:layout_width="87dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/orangebtn"
+                android:layout_marginStart="26dp"
+                android:text="@string/Green"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/casual_formalBusinessOutfitColors"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="155dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/btncasual_formalBusinessOutfitBlack"
+                    android:layout_width="87dp"
+                    android:layout_height="41dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/blackbtn"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/Black"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <ToggleButton
+                    android:id="@+id/btncasual_formalBusinessOutfitGray"
+                    android:layout_width="87dp"
+                    android:layout_height="41dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/graybtn"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/Gray"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <ToggleButton
+                    android:id="@+id/btncasual_formalBusinessOutfitNavy"
+                    android:layout_width="87dp"
+                    android:layout_height="41dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/navybtn"
+                    android:text="@string/Navy"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/btncasual_formalBusinessOutfitWhite"
+                    android:layout_width="89dp"
+                    android:layout_height="41dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/whitebtn"
+                    android:layout_marginStart="26dp"
+                    android:text="@string/White"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_LongsleevePoloOutfitColors"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btn_LongsleevePoloOutfitGray"
+                android:layout_width="87dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/graybtn"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/Gray"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btn_LongsleevePoloOutfitLightblue"
+                android:layout_width="120dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/lightbluebtn"
+                android:layout_marginEnd="15dp"
+                android:text="@string/LightBlue"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btn_LongsleevePoloOutfitNavy"
+                android:layout_width="87dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/navybtn"
+                android:text="@string/Navy"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btn_LongsleevePoloOutfitWhite"
+                android:layout_width="89dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/whitebtn"
+                android:layout_marginStart="26dp"
+                android:text="@string/White"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_PantsOutfitColors"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btn_PantsOutfitGray"
+                android:layout_width="87dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/graybtn"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/Gray"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btn_PantsOutfitKhaki"
+                android:layout_width="87dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/khakibtn"
+                android:layout_marginEnd="15dp"
+                android:text="@string/LightBlue"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btn_PantsOutfitLightblue"
+                android:layout_width="120dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/lightbluebtn"
+                android:text="@string/Navy"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btn_PantsOutfitTaupe"
+                android:layout_width="89dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/whitebtn"
+                android:layout_marginStart="26dp"
+                android:text="@string/White"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_BlouseOutfitColors"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="155dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btn_BlouseOutfitLightblue"
+                android:layout_width="120dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/lightbluebtn"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/LightBlue"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btn_BlouseOutfitNavy"
+                android:layout_width="87dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/navybtn"
+                android:layout_marginEnd="15dp"
+                android:text="@string/Navy"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/btn_BlouseOutfitPink"
+                android:layout_width="87dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/pinkbtn"
+                android:text="@string/Navy"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/btn_BlouseOutfitWhite"
+                android:layout_width="89dp"
+                android:layout_height="41dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/whitebtn"
+                android:layout_marginStart="26dp"
+                android:text="@string/White"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="290dp"
+            android:layout_gravity="center">
+
+            <ToggleButton
+                android:id="@+id/btnNext4"
+                android:layout_width="290dp"
+                android:layout_height="53dp"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/continuebtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                android:visibility="visible"
+                android:text="@string/Next" />
+
+        </LinearLayout>
+
+    <include layout="@layout/activity_main"/>
+
+</FrameLayout>

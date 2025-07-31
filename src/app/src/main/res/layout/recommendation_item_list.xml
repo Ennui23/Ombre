@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageRecommendation"
+        android:layout_width="400dp"
+        android:layout_height="530dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/GetRecommend"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Event TextView -->
+    <ToggleButton
+        android:id="@+id/removeButton"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/btnremove"
+        android:textColor="@color/black"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toBottomOf="@+id/imageRecommendation"
+        app:layout_constraintEnd_toEndOf="@+id/imageRecommendation"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/imageRecommendation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/imageRecommendation">
+
+        <TextView
+            android:id="@+id/textEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Adventure"
+            android:textColor="#A92F27"
+            android:layout_marginEnd="17dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageRecommendation" />
+
+        <TextView
+            android:id="@+id/textSubcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active"
+            android:textSize="17dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="#A92F27"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textEvent" />
+
+        <!-- Type TextView -->
+        <TextView
+            android:id="@+id/textType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jackets"
+            android:textSize="17dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="#A92F27"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSubcategory" />
+
+        <!-- Color TextView -->
+        <TextView
+            android:id="@+id/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black"
+            android:textSize="17dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="#A92F27"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textType" />
+
+        <!-- Pattern TextView -->
+        <TextView
+            android:id="@+id/textPattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Striped"
+            android:textSize="16sp"
+            android:textColor="#A92F27"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textColor" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

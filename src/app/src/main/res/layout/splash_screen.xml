@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="160dp"
+        android:layout_height="165dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="68dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/ombrelogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logotextView"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/splashtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <ImageView
+        android:id="@+id/splashsubtext"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/splashsubtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logotextView" />
+
+    <ImageView
+        android:id="@+id/splashfooter"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/splashfooter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splashsubtext" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

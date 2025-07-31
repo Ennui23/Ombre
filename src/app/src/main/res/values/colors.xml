@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="statusbar_color">#FDD8CB</color>
+    <color name="adventure_red">#571601</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="default_tab">#FFFFFF</color>
+    <color name="active">#FAEFEA</color>
+    <color name="business_purple">#571601</color>
+    <color name="black">#FF000000</color>
+</resources>

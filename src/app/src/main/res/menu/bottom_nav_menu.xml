@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/home"
+        android:title="Classify" />
+    <item
+        android:id="@+id/action_event"
+        android:icon="@drawable/outfit"
+        android:title="Event Outfits" />
+    <item
+        android:id="@+id/action_recommendation"
+        android:icon="@drawable/recommend"
+        android:title="Recommendations" />
+</menu>
